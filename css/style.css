@@ -32,6 +32,40 @@ body {
   animation: pulse 1s infinite;
 }
 
+.loading-animation {
+  max-width: 100%;
+  height: auto;
+  width: 300px; /* Ukuran lebih besar */
+  display: block;
+  align-items: center;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .subtitle {
+    font-size: 1.3rem;
+  }
+
+  .countdown {
+    font-size: 1.8rem;
+  }
+
+  .loading-animation {
+    width: 180px; /* Tetap besar di layar kecil tapi tidak terlalu besar */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .loading-animation {
+    width: 150px; /* Lebih kecil untuk layar sangat kecil */
+  }
+}
+
 /* Animations */
 @keyframes fadeIn {
   from {
